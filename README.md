@@ -1,19 +1,9 @@
 # jpa02-vedp3705
 
-* TODO: Correct the links to repo below, 
-  then delete this TODO.  Replace it with 
-  a link to your repo, e.g. 
-  https://github.com/ucsb-cs156-s24/jpa01-cgaucho
-
-Repo: https://ucsb-cs156-s24/STARTER-jpa01
-
-* TODO: Correct the "deployed at" link to app on Dokku
-  then delete this TODO.  Replace it with 
-  a link to your running app on Dokku, e.g.
-  https://jpa01-cgaucho.dokku-14.cs.ucsb.edu
+Repo: https://github.com/ucsb-cs156-f24/jpa02-vedp3705.git
 
 
-Deployed at: https://jpa01-replace-me.dokku-xx.cs.ucsb.edu
+Deployed at: https://jpa02-vedp3705.dokku-02.cs.ucsb.edu
 
 
 # About this repo
