@@ -1,6 +1,6 @@
 # jpa02-vedp3705
 
-Repo: https://github.com/ucsb-cs156-f24/jpa02-vedp3705.git
+Repo: https://github.com/ucsb-cs156-f24/jpa02-vedp3705
 
 
 Deployed at: https://jpa02-vedp3705.dokku-02.cs.ucsb.edu
