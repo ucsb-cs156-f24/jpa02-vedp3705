@@ -24,28 +24,61 @@ public class TeamTest {
         assertEquals("Team(name=test-team, members=[])", team.toString());
     }
 
-    Team otherTeam;
+    //Team otherTeam;
+
+    // @Test
+    // public void equals_returns_correct_bool() {
+    //     Team emptyTeam = new Team("test-team");
+
+    //     assertEquals(true, team.equals(team));
+
+    //     String stringTest = "test";
+    //     assertEquals(false, team.equals(stringTest));
+
+    //     Team testObj = new Team("test-team");
+    //     assertEquals(true, team.equals(testObj));
+
+    //     testObj.addMember("testMem");
+    //     assertEquals(false, team.equals(testObj));
+
+    //     team.addMember("testMem");
+    //     assertEquals(true, team.equals(testObj));
+
+    //     assert !(team.equals(otherTeam));
+    // }
+
 
     @Test
     public void equals_returns_correct_bool() {
-        Team emptyTeam = new Team("test-team");
+    Team team = new Team("test-team");
+    Team otherTeam = new Team("test-team");
 
-        assertEquals(true, team.equals(team));
+    assertEquals(true, team.equals(team));
 
-        String stringTest = "test";
-        assertEquals(false, team.equals(stringTest));
+    assertEquals(false, team.equals("test"));
 
-        Team testObj = new Team("test-team");
-        assertEquals(true, team.equals(testObj));
+    assertEquals(true, team.equals(otherTeam));
 
-        testObj.addMember("testMem");
-        assertEquals(false, team.equals(testObj));
+    otherTeam.addMember("testMem");
+    assertEquals(false, team.equals(otherTeam));
 
-        team.addMember("testMem");
-        assertEquals(true, team.equals(testObj));
+    team.addMember("testMem");
+    assertEquals(true, team.equals(otherTeam));
 
-        assert !(team.equals(otherTeam));
-    }
+    Team team3 = new Team("test-team");
+    team3.addMember("anotherMem");
+    assertEquals(false, team.equals(team3));
+
+    Team diffTeam = new Team("diff-name");
+    diffTeam.addMember("testMem");
+    assertEquals(false, team.equals(diffTeam));
+
+    //Team emptyTeam = new Team("test-team");
+    //String stringTest = "test";
+    //assertEquals(false, team.equals(stringTest));
+    //assert !(team.equals(otherTeam));
+}
+
 
     @Test
     public void hashCode_returns_correct_val() {
